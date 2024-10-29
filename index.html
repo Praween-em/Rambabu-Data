@@ -37,16 +37,16 @@
             padding: 20px;
             text-align: center;
         }
-        .card {
-            background-color: white;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 300px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: left; /* Align text to the left */
-        }
         
+       .card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%; /* Change max-width to 90% for better responsiveness */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+}
         .card h2 {
             margin-top: 0; /* Remove default margin */
             font-size: 1.5em; /* Adjust heading size */
@@ -85,14 +85,31 @@
             justify-content: center; /* Center the image horizontally */
             margin-top: 20px; /* Space above the image */
         }
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-            }
-            .card {
-                width: 90%;
-            }
-        }
+        .card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%; /* Change max-width to 90% for better responsiveness */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .card {
+        padding: 15px; /* Reduce padding for smaller screens */
+        margin: 10px; /* Adjust margin to fit better */
+        max-width: 95%; /* Ensure card uses more screen width */
+        box-shadow: none; /* Remove shadow if desired */
+    }
+
+    .profile-image {
+        width: 120px; /* Slightly reduce image size on mobile */
+    }
+}
+
+        
     </style>
 </head>
 <body>
@@ -151,3 +168,21 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
